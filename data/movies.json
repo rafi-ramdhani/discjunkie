@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Magnolia",
+        "price": 250000,
+        "stock": 15,
+        "format": "Blu-ray",
+        "imgUrl": "https://c8.alamy.com/comp/BNPXRP/film-poster-magnolia-1999-BNPXRP.jpg",
+        "UserId": 0
+    },
+    {
+        "title": "Blue Velvet",
+        "price": 250000,
+        "stock": 15,
+        "format": "Blu-ray",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Blue_Velvet_%281986%29.png/220px-Blue_Velvet_%281986%29.png",
+        "UserId": 0
+    },
+    {
+        "title": "Before Sunrise",
+        "price": 250000,
+        "stock": 10,
+        "format": "Blu-ray",
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1P-mPnVeKEZbHA_p0gC0osmQqYhHCOGeXcQDIeqkd0xevmmSW",
+        "UserId": 0
+    },
+    {
+        "title": "Oldboy",
+        "price": 250000,
+        "stock": 10,
+        "format": "Blu-ray",
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw-BzLpVxN4G7_C_7-_RrqnEx5NJkWOxJ6DPCUKkuMo7LUon-t",
+        "UserId": 0
+    },
+    {
+        "title": "Midnight in Paris",
+        "price": 250000,
+        "stock": 10,
+        "format": "Blu-ray",
+        "imgUrl": "https://play-lh.googleusercontent.com/iPprSq6rRF9n0m6suHSiy9Z1Ci_T3zqSYZm3D6aivDwj2zobuZ4LJXMizu8yEwX4wzZw",
+        "UserId": 0
+    }
+]

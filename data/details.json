@@ -1,0 +1,37 @@
+[
+    {
+        "directorName": "Paul Thomas Anderson",
+        "yearReleased": 1999,
+        "rating": 8.0,
+        "sinopsis": "Earl Partridge and Jimmy Gator, both afflicted with cancer, work together on a TV show. They both live in dysfunctional families, which affects their personal and professional lives.",
+        "MovieId": 1
+    },
+    {
+        "directorName": "David Lynch",
+        "yearReleased": 1986,
+        "rating": 7.7,
+        "sinopsis": "Walking through a field near his home, Jeffrey discovers a severed human ear which ignites his curiosity. He joins forces with a detective's daughter to solve the mystery.",
+        "MovieId": 2
+    },
+    {
+        "directorName": "Richard Linklater",
+        "yearReleased": 1995,
+        "rating": 8.1,
+        "sinopsis": "While travelling on a train in Europe, Jesse, an American man, meets Celine, a French woman. On his last day in Europe before returning to the US, he decides to spend his remaining hours with her.",
+        "MovieId": 3
+    },
+    {
+        "directorName": "Park Chan-wook",
+        "yearReleased": 2001,
+        "rating": 8.0,
+        "sinopsis": "A man, held captive for no apparent reason for years, is given a cell phone, money and expensive clothes and released. Unless he finds out the identity of his captor, an even worse fate awaits him.",
+        "MovieId": 4
+    },
+    {
+        "directorName": "Woody Allen",
+        "yearReleased": "2013",
+        "rating": 7.4,
+        "sinopsis": "Gil arrives with his fiancee and her family in Paris for a vacation, even as he tries to finish his debut novel. He is beguiled by the city, which takes him to a time past, away from his fiancee.",
+        "MovieId": 5
+    }
+]
