@@ -33,5 +33,145 @@
         "rating": 7.4,
         "sinopsis": "Gil arrives with his fiancee and her family in Paris for a vacation, even as he tries to finish his debut novel. He is beguiled by the city, which takes him to a time past, away from his fiancee.",
         "MovieId": 5
+    },
+    {
+        "directorName": "Hirokazu Koreeda",
+        "yearReleased": 2008,
+        "rating": 8,
+        "sinopsis": "A family gathers together for a commemorative ritual whose nature only gradually becomes clear.",
+        "MovieId": 6
+    },
+    {
+        "directorName": "Nicolas Winding Refn",
+        "yearReleased": 2011,
+        "rating": 7.8,
+        "sinopsis": "A stuntman and getaway driver falls in love with Irene who is married to a criminal. In a bid to protect her from her husband and some gangsters, he decides to cross over to the other side of the law.",
+        "MovieId": 7
+    },
+    {
+        "directorName": "Edgar Wright",
+        "yearReleased": 2007,
+        "rating": 7.8,
+        "sinopsis": "Police officer Nicholas Angel is known to be the best across London. His seniors, who are jealous of his achievements, transfer him to a remote village where he encounters various challenges.",
+        "MovieId": 8
+    },
+    {
+        "directorName": "Edgar Wright",
+        "yearReleased": 2021,
+        "rating": 7.5,
+        "sinopsis": "An aspiring fashion designer is mysteriously able to enter the 1960s, where she encounters a dazzling wannabe singer. However, the glamour is not all it appears to be, and the dreams of the past start to crack and splinter into something far darker.",
+        "MovieId": 9
+    },
+    {
+        "directorName": "Wes Anderson",
+        "yearReleased": 2012,
+        "rating": 7.8,
+        "sinopsis": "Sam, a 12-year-old orphan, falls in love with Suzy and the two run away to a secluded cove on an island, prompting the entire town to begin a search.",
+        "MovieId": 10
+    },
+    {
+        "directorName": "Wong Kar-wai",
+        "yearReleased": 2000,
+        "rating": 8.1,
+        "sinopsis": "Two neighbors form a strong bond after both suspect extramarital activities of their spouses. However, they agree to keep their bond platonic so as not to commit similar wrongs.",
+        "MovieId": 11
+    },
+    {
+        "directorName": "Wong Kar-wai",
+        "yearReleased": 1994,
+        "rating": 8.1,
+        "sinopsis": "Two melancholy Hong Kong policemen fall in love: one with a mysterious female underworld figure, the other with a beautiful and ethereal waitress at a late-night restaurant he frequents.",
+        "MovieId": 12
+    },
+    {
+        "directorName": "Ari Aster",
+        "yearReleased": 2018,
+        "rating": 7.3,
+        "sinopsis": "After her mother passes away, Annie and the rest of the family are grief-stricken. Soon, strange things start occurring and the horrifying truth about Annie's ancestry begins to come to light.",
+        "MovieId": 13
+    },
+    {
+        "directorName": "Ari Aster",
+        "yearReleased": 2019,
+        "rating": 7.1,
+        "sinopsis": "Dani's psychological trauma affects her relationship with Christian, her lover. However, when they visit their friend's ancestral commune in an effort to mend things, it changes their lives forever.",
+        "MovieId": 14
+    },
+    {
+        "directorName": "Hideo Nakata",
+        "yearReleased": 1998,
+        "rating": 7.2,
+        "sinopsis": "A woman and her ex-husband investigate a series of teen deaths caused by a mysterious videotape. Their investigation takes an ugly turn when their own son becomes a victim.",
+        "MovieId": 15
+    },
+    {
+        "directorName": "Richard Ayoade",
+        "yearReleased": 2010,
+        "rating": 7.3,
+        "sinopsis": "15-year-old Oliver Tate has two objectives: To lose his virginity before his next birthday, and to extinguish the flame between his mother and an ex-lover who has resurfaced in her life.",
+        "MovieId": 16
+    },
+    {
+        "directorName": "Paul Thomas Anderson",
+        "yearReleased": 2002,
+        "rating": 7.3,
+        "sinopsis": "A frustrated Barry Egan calls a phone-sex line to curb his loneliness. Little does he know that he will land in huge trouble and will also jeopardise his relationship with Lena.",
+        "MovieId": 17
+    },
+    {
+        "directorName": "Gareth Evans",
+        "yearReleased": 2012,
+        "rating": 7.6,
+        "sinopsis": "After getting stuck inside a 15-storey safe house belonging to drug lord Tama, Rama and his team must use the little ammunition they have to take him down and survive the unofficial mission.",
+        "MovieId": 18
+    },
+    {
+        "directorName": "Michael Mann",
+        "yearReleased": 1995,
+        "rating": 8.2,
+        "sinopsis": "Lieutenant Hanna, a detective, decides to catch a highly intelligent seasonal criminal who has vowed to pull off one last robbery before he retires for good.",
+        "MovieId": 19
+    },
+    {
+        "directorName": "Martin Campbell",
+        "yearReleased": 2006,
+        "rating": 8.0,
+        "sinopsis": "Special Agent James Bond embarks on a mission to prevent Le Chiffre, a mob banker, from winning a high stakes poker game. He is aided by Vesper Lynd, a British Treasury agent.",
+        "MovieId": 20
+    },
+    {
+        "directorName": "Gil Kenan",
+        "yearReleased": 2006,
+        "rating": 6.6,
+        "sinopsis": "Three teenagers discover that their neighbour's house is actually a monster that hates children. Soon, they decide to destroy the heart of the house and kill it.",
+        "MovieId": 21
+    },
+    {
+        "directorName": "Ruben Fleischer",
+        "yearReleased": 2009,
+        "rating": 7.6,
+        "sinopsis": "Columbus, a college student, joins forces with three eccentric strangers to survive a zombie apocalypse and travel through the south-western USA to a safe haven.",
+        "MovieId": 22 
+    },
+    {
+        "directorName": "Danny Boyle",
+        "yearReleased": 2004,
+        "rating": 7.6,
+        "sinopsis": "After a mysterious virus wreaks havoc in the United Kingdom, a team of survivors tries to cope with the aftermath of the disaster and find security.",
+        "MovieId": 23
+    },
+    {
+        "directorName": "Danny Boyle",
+        "yearReleased": 1996,
+        "rating": 8.1,
+        "sinopsis": "Renton is a drug addict who tries to mend his ways by moving to London and starting life afresh. He, however, is pulled back into the world of addiction by his friends.",
+        "MovieId": 24
+    },
+    {
+        "directorName": "Robert Zemeckis",
+        "yearReleased": 1994,
+        "rating": 8.8,
+        "sinopsis": "Forrest, a man with low IQ, recounts the early years of his life when he found himself in the middle of key historical events. All he wants now is to be reunited with his childhood sweetheart, Jenny.",
+        "MovieId": 25
     }
 ]
