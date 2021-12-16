@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Detail.belongsTo(models.Movie)
     }
   };
   Detail.init({
