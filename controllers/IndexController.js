@@ -1,4 +1,5 @@
 const { Movie, Genre, MovieGenre, Detail, User } = require('../models')
+const formatPrice = require('../helpers/formatPrice')
 
 class IndexController {
 
@@ -17,7 +18,7 @@ class IndexController {
           randomMovies.push(data[random])
         }
 
-        res.render('home', { randomMovies })
+        res.render('home', { randomMovies, formatPrice })
       })
       .catch(err => {
         res.send(err)

@@ -1,6 +1,7 @@
 const { Movie, Genre, MovieGenre, Detail, User } = require('../models')
 const Sequelize = require('sequelize')
 const Op = Sequelize.Op
+const formatPrice = require('../helpers/formatPrice')
 
 class MovieController {
 
@@ -16,15 +17,33 @@ class MovieController {
       }
     }
 
-    if (req.query.search) {
+    if (req.query.search && req.query.sortBy) {
+      if (req.query.sortBy === 'most-expensive') {
+        where.where['title'] = {
+          [Op.iLike]: `%${req.query.search}%`
+        }
+        where.order = [['price', 'DESC']]
+      } else if (req.query.sortBy === 'cheapest') {
+        where.where['title'] = {
+          [Op.iLike]: `%${req.query.search}%`
+        }
+        where.order = [['price', 'ASC']]
+      }
+    } else if (req.query.search && !req.query.sortBy) {
       where.where['title'] = {
         [Op.iLike]: `%${req.query.search}%`
+      }
+    } else if (!req.query.search && req.query.sortBy) {
+      if (req.query.sortBy === 'most-expensive') {
+        where.order = [['price', 'DESC']]
+      } else if (req.query.sortBy === 'cheapest') {
+        where.order = [['price', 'ASC']]
       }
     }
 
     Movie.scopeNotAvailable(where)
       .then(data => {
-        res.render('movieList', { data })
+        res.render('movieList', { data, formatPrice })
       })
       .catch(err => {
         res.send(err)
@@ -49,7 +68,7 @@ class MovieController {
         })
       })
       .then(data => {
-        res.render('movieDetail', { data, genres: movieGenre.Genres })
+        res.render('movieDetail', { data, genres: movieGenre.Genres, formatPrice })
       })
       .catch(err => {
         res.send(err)
