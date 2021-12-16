@@ -38,6 +38,24 @@
     </a>
   </nav>
 
+  <section style="background-color: #ed533c">
+    <div class="container py-5">
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+          <form action="">
+            <input type="search" class="form-control" placeholder="Search by title" name="search"><br>
+            <select class="form-select" name="sortBy" id="format">
+              <option value="" selected disabled>Sort by</option>
+              <option value="most-expensive">Most Expensive</option>
+              <option value="cheapest">Cheapest</option>
+            </select><br>
+            <input type="submit" class="btn btn-primary" value="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="p-5" style="background-color: #ebe7da;">
     <div class="container">
       <div class="row text-center">
@@ -56,9 +74,10 @@
                   <%= element.stock %>
                 </p>
                 <p class="card-text"><strong>Price:</strong>
-                  <%= element.price %>
+                  <%= formatPrice(element.price) %>
                 </p>
                 <a href="/movies/<%= element.id %>" class="btn" style="background-color: #ed533c">Details</a>
+                <a href="#" class="btn" style="background-color: #ed533c">To Cart</a>
               </div>
             </div>
           </div>
