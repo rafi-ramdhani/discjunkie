@@ -1,5 +1,4 @@
 const { Movie, Genre, MovieGenre, Detail, User } = require('../models')
-const Sequelize = require('sequelize')
 
 class IndexController {
 

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>DiscJunkie | Add Movie</title>
+</head>
+
+<body style="background-color: #ebe7da;">
+
+  <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #07141c;">
+    <a href="#">
+      <div class="container">
+        <a href="/"><img
+            src="https://lh3.googleusercontent.com/2RIq19exzNZr8jtkBxdow2idXPp0ELRQcsU9VMJIOnBZHAYVkRMbDzAi04c7YuMOpKoT=s170"
+            alt="DiscJunkie"></a>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="/" class="nav-link" style="color: #ebe7da;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" style="color: #ebe7da;">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" style="color: #ebe7da;">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </a>
+  </nav>
+
+  <section>
+    <div class="container py-5">
+      <div class="text-center">
+        <h2>Add Movie Form</h2>
+      </div>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+          <form action="/movies/<%= movie.id %>/edit" method="post">
+
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" class="form-control" id="title" placeholder="e.g. Forrest Gump" name="title"
+              value="<%= movie.title %>"><br>
+
+            <label for="price" class="form-label">Price:</label>
+            <input type="number" class="form-control" id="title" placeholder="e.g. 50000" name="price"
+              value="<%= movie.price %>"><br>
+
+            <label for="stock" class="form-label">Stock:</label>
+            <input type="number" class="form-control" id="stock" placeholder="e.g. 5" name="stock"
+              value="<%= movie.stock %>"><br>
+
+            <label for="format" class="form-label">Format:</label>
+            <select class="form-select" name="format" id="format">
+              <option value="Blu-ray" <%=movie.format==='Blu-ray' ? 'selected' : '' %>>Blu-ray</option>
+              <option value="DVD" <%=movie.format==='DVD' ? 'selected' : '' %>>DVD</option>
+              <option value="VCD" <%=movie.format==='VCD' ? 'selected' : '' %>>VCD</option>
+            </select><br>
+
+            <label for="imgUrl" class="form-label">Image URL:</label>
+            <input type="text" class="form-control" id="imgUrl"
+              placeholder="e.g. https://m.media-amazon.com/images/I/81xTx-LxAPL._SL1500_.jpg" name="imgUrl"
+              value="<%= movie.imgUrl %>"><br>
+
+            <label for="" class="form-label">Genres:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Action" id="action" name="action"
+                <%=data.find(element=> element.GenreId === 1) ? 'checked' : '' %>>
+              <label class="form-check-label" for="action">
+                Action
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Comedy" id="comedy" name="comedy"
+                <%=data.find(element=> element.GenreId === 2) ? 'checked' : '' %>>
+              <label class="form-check-label" for="comedy">
+                Comedy
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Drama" id="drama" name="drama"
+                <%=data.find(element=> element.GenreId === 3) ? 'checked' : '' %>>
+              <label class="form-check-label" for="drama">
+                Drama
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Fantasy" id="fantasy" name="fantasy"
+                <%=data.find(element=> element.GenreId === 4) ? 'checked' : '' %>>
+              <label class="form-check-label" for="fantasy">
+                Fantasy
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Horror" id="horror" name="horror"
+                <%=data.find(element=> element.GenreId === 5) ? 'checked' : '' %>>
+              <label class="form-check-label" for="horror">
+                Horror
+              </label>
+            </div><br>
+
+            <label for="directorName" class="form-label">Director:</label>
+            <input type="text" class="form-control" id="directorName" placeholder="e.g. Robert Zemeckis"
+              name="directorName" value="<%= movie.Detail.directorName %>"><br>
+
+            <label for="sinopsis" class="form-label">Synopsis:</label>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Write synopsis.." id="sinopsis"
+                name="sinopsis"><%= movie.Detail.sinopsis %></textarea>
+            </div>
+
+            <label for="yearReleased" class="form-label">Release Year:</label>
+            <input type="number" class="form-control" id="yearReleased" placeholder="e.g. 1994" name="yearReleased"
+              value="<%= movie.Detail.yearReleased %>"><br>
+
+            <label for="rating" class="form-label">Rating:</label>
+            <input type="number" step="0.1" class="form-control" id="rating" placeholder="e.g. 8,8" name="rating"
+              value="<%= movie.Detail.rating %>"><br>
+
+            <input type="submit" class="btn" style="background-color: #ed533c" value="Edit Movie">
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
