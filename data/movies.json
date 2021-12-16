@@ -5,7 +5,7 @@
         "stock": 15,
         "format": "Blu-ray",
         "imgUrl": "https://c8.alamy.com/comp/BNPXRP/film-poster-magnolia-1999-BNPXRP.jpg",
-        "UserId": 0
+        "UserId": 1
     },
     {
         "title": "Blue Velvet",
@@ -13,7 +13,7 @@
         "stock": 15,
         "format": "Blu-ray",
         "imgUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Blue_Velvet_%281986%29.png/220px-Blue_Velvet_%281986%29.png",
-        "UserId": 0
+        "UserId": 1
     },
     {
         "title": "Before Sunrise",
@@ -21,7 +21,7 @@
         "stock": 10,
         "format": "Blu-ray",
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1P-mPnVeKEZbHA_p0gC0osmQqYhHCOGeXcQDIeqkd0xevmmSW",
-        "UserId": 0
+        "UserId": 1
     },
     {
         "title": "Oldboy",
@@ -29,7 +29,7 @@
         "stock": 10,
         "format": "Blu-ray",
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw-BzLpVxN4G7_C_7-_RrqnEx5NJkWOxJ6DPCUKkuMo7LUon-t",
-        "UserId": 0
+        "UserId": 1
     },
     {
         "title": "Midnight in Paris",
@@ -37,6 +37,166 @@
         "stock": 10,
         "format": "Blu-ray",
         "imgUrl": "https://play-lh.googleusercontent.com/iPprSq6rRF9n0m6suHSiy9Z1Ci_T3zqSYZm3D6aivDwj2zobuZ4LJXMizu8yEwX4wzZw",
-        "UserId": 0
+        "UserId": 1
+    },
+    {
+        "title": "Still Walking",
+        "price": 250000,
+        "stock": 5,
+        "format": "Blu-ray",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/en/b/be/Still_Walking_%28film%29_POSTER.png",
+        "UserId": 1
+    },
+    {
+        "title": "Drive",
+        "price": 250000,
+        "stock": 15,
+        "format": "Blu-ray",
+        "imgUrl": "http://www.movienewsletters.net/photos/109292R1.jpg",
+        "UserId": 1
+    },
+    {
+        "title": "Hot Fuzz",
+        "price": 250000,
+        "stock": 15,
+        "format": "Blu-ray",
+        "imgUrl": "https://m.media-amazon.com/images/M/MV5BMzg4MDJhMDMtYmJiMS00ZDZmLThmZWUtYTMwZDM1YTc5MWE2XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg",
+        "UserId":1
+    },
+    {
+        "title": "Last Night in Soho",
+        "price": 250000,
+        "stock": 20,
+        "format": "Blu-ray",
+        "imgUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSO6AMUD910WnxbPE1I4aE0fBStHk_FU8k2sUhe_71PgL3OXcJE",
+        "UserId": 1
+    },
+    {
+        "title": "Moonrise Kingdom",
+        "price": 250000,
+        "stock": 10,
+        "format": "Blu-ray",
+        "imgUrl": "https://asset.kompas.com/crops/vFwrxhIenKlMsiW5zMBXrKV3ze4=/162x30:1418x868/750x500/data/photo/2021/04/06/606bd2aa867f5.jpg",
+        "UserId": 1
+    }, 
+    {
+        "title": "In the Mood for Love",
+        "price": 100000,
+        "stock": 10,
+        "format": "DVD",
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FJH21TV5VCtHdkNfbAWLz1eQJb3zFAqEOXCrqCIkCXw8JhUs",
+        "UserId": 1
+    },
+    {
+        "title": "Chungking Express",
+        "price": 100000,
+        "stock": 5,
+        "format": "DVD",
+        "imgUrl": "https://m.media-amazon.com/images/M/MV5BMjI4N2QyMWMtYjk0MC00ZTI2LTg1NjQtYmY3MDNmZTUzZjE5XkEyXkFqcGdeQXVyMTExNzQ3MzAw._V1_.jpg",
+        "UserId": 1
+    },
+    {
+        "title": "Hereditary",
+        "price": 100000,
+        "stock": 10,
+        "format": "DVD",
+        "imgUrl": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/6267cf047f29e5b4e110665e91aa6d90_7e8294ed-26b3-4992-bcff-5d8550d15421_510x.jpg?v=1573587291",
+        "UserId": 1
+    },
+    {
+        "title": "Midsommar",
+        "price": 100000,
+        "stock": 5,
+        "format": "DVD",
+        "imgUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7TC3aqR6kv9_4b9P6DZWqJPkuhPJAC26omhgaWvPlfkVqJbdj",
+        "UserId": 1
+    },
+    {
+        "title": "Ringu",
+        "price": 100000,
+        "stock": 5,
+        "format": "DVD",
+        "imgUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaVeAsPNs1CAHvdyAFVlWb1RHE-JimbxH6puaxyb54hUDd6HCQ",
+        "UserId": 1
+    },
+    {
+        "title": "Submarine",
+        "price": 100000,
+        "stock": 10,
+        "format": "DVD",
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9hSW7UFRWH9UkQNLRjuq6zkrw3ZUdy9EleBDN-ZqsdxN2UuX",
+        "UserId": 1
+    },
+    {
+        "title": "Punch-Drunk Love",
+        "price": 100000,
+        "stock": 10,
+        "format": "DVD",
+        "imgUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs8mEJHV4stj3_F6wBE6jdvXEPVKwidRsPfCyOG5m2fSfhoWcX",
+        "UserId": 1
+    },
+    {
+        "title": "The Raid",
+        "price": 100000,
+        "stock": 5,
+        "format": "DVD",
+        "imgUrl": "https://m.media-amazon.com/images/M/MV5BZGIxODNjM2YtZjA5Mi00MjA5LTk2YjItODE0OWI5NThjNTBmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_.jpg",
+        "UserId": 1
+    },
+    {
+        "title": "Heat",
+        "price": 100000,
+        "stock": 10,
+        "format": "DVD",
+        "imgUrl": "https://flxt.tmsimg.com/assets/p17455_p_v8_ae.jpg",
+        "UserId": 1
+    },
+    {
+        "title": "Casino Royale",
+        "price": 100000,
+        "stock": 10,
+        "format": "DVD",
+        "imgUrl": "https://m.media-amazon.com/images/M/MV5BMDI5ZWJhOWItYTlhOC00YWNhLTlkNzctNDU5YTI1M2E1MWZhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg",
+        "UserId": 1
+    },
+    {
+        "title": "Monster House",
+        "price": 50000,
+        "stock": 5,
+        "format": "VCD",
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWzswjbokWGE-DGnWuP6kntgxFl2Sgg1_1F-GbIYgJaZvfz1p6",
+        "UserId": 1
+    },
+    {
+        "title": "Zombieland",
+        "price": 50000,
+        "stock": 5,
+        "format": "VCD",
+        "imgUrl": "https://m.media-amazon.com/images/M/MV5BMTU5MDg0NTQ1N15BMl5BanBnXkFtZTcwMjA4Mjg3Mg@@._V1_.jpg",
+        "UserId": 1
+    },
+    {
+        "title": "28 Days Later",
+        "price": 50000,
+        "stock": 5,
+        "format": "VCD",
+        "imgUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTe6Gk5TrEjlAudmsmGZ5HI8ajRoWrB5wZRERRP2mDHEieXa6PD",
+        "UserId": 1
+    },
+    {
+        "title": "Trainspotting",
+        "price": 50000,
+        "stock": 5,
+        "format": "VCD",
+        "imgUrl": "https://i.pinimg.com/originals/42/ae/20/42ae2076f8dbe79855d1cb207f818342.jpg",
+        "UserId": 1
+    },
+    {
+        "title": "Forest Gump",
+        "price": 50000,
+        "stock": 5,
+        "format": "VCD",
+        "imgUrl": "https://m.media-amazon.com/images/I/81xTx-LxAPL._SL1500_.jpg",
+        "UserId": 1
     }
 ]
