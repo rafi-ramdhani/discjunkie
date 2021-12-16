@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       yearReleased: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       rating: {
         type: Sequelize.DECIMAL

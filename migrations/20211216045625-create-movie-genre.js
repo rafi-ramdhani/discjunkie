@@ -14,7 +14,9 @@ module.exports = {
           model: {
             tableName: "Movies"
           },
-          key: "id"
+          key: "id",
+          onDelete: 'CASCADE',
+          onUpdate: 'CASCADE'
         }
       },
       GenreId: {
@@ -23,7 +25,9 @@ module.exports = {
           model: {
             tableName: "Genres"
           },
-          key: "id"
+          key: "id",
+          onDelete: 'CASCADE',
+          onUpdate: 'CASCADE'
         }
       },
       createdAt: {
