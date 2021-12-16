@@ -1,1 +1,29 @@
 node_modules
+
+Tables:
+
+npx sequelize-cli model:generate --name User --attributes username:string,email:string,password:string,role:string
+
+npx sequelize-cli model:generate --name Movie --attributes title:string,price:integer,stock:integer,format:string
+
+npx sequelize-cli model:generate --name MovieGenre --attributes MovieId:integer,GenreId:integer
+
+npx sequelize-cli model:generate --name Genre --attributes genreName:string
+
+npx sequelize-cli model:generate --name Detail --attributes directorName:string,yearReleased:string,rating:decimal,sinopsis:string
+
+FK:
+
+npx sequelize-cli migration:generate --name add-FK-Movie-UserId
+
+npx sequelize-cli migration:generate --name add-FK-Detail-MovieId
+
+Seeds:
+
+npx sequelize-cli seed:generate --name seed-Genre
+
+npx sequelize-cli seed:generate --name seed-Movie
+
+npx sequelize-cli seed:generate --name seed-Detail
+
+npx sequelize-cli seed:generate --name seed-User
