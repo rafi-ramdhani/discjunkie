@@ -5,7 +5,7 @@ function register(email) {
     service: 'gmail',
     auth: {
       user: 'rafiramdhani20@gmail',
-      pass: 'com.gmail@20ramdhanirafi'
+      pass: ''
     }
   });
 
