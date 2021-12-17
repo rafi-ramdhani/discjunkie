@@ -14,27 +14,31 @@
 
   <!-- Navbar -->
   <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #07141c;">
-    <a href="#">
-      <div class="container">
-        <a href="/"><img
-            src="https://lh3.googleusercontent.com/2RIq19exzNZr8jtkBxdow2idXPp0ELRQcsU9VMJIOnBZHAYVkRMbDzAi04c7YuMOpKoT=s170"
-            alt="DiscJunkie"></a>
+    <div class="container">
+      <a href="/"><img
+          src="https://lh3.googleusercontent.com/2RIq19exzNZr8jtkBxdow2idXPp0ELRQcsU9VMJIOnBZHAYVkRMbDzAi04c7YuMOpKoT=s170"
+          alt="DiscJunkie"></a>
 
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link" style="color: #ebe7da;">Home</a>
+          </li>
+          <% if (logged) { %>
             <li class="nav-item">
-              <a href="/" class="nav-link" style="color: #ebe7da;">Home</a>
+              <a href="/logout" class="nav-link" style="color: #ebe7da;">Sign Out</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link" style="color: #ebe7da;">Sign In</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link" style="color: #ebe7da;">Sign Up</a>
-            </li>
-          </ul>
-        </div>
+            <% } else { %>
+              <li class="nav-item">
+                <a href="/login" class="nav-link" style="color: #ebe7da;">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a href="/register" class="nav-link" style="color: #ebe7da;">Sign Up</a>
+              </li>
+              <% } %>
+        </ul>
       </div>
-    </a>
+    </div>
   </nav>
 
   <!-- Showcase -->
@@ -45,8 +49,13 @@
           <h1 style="color: #ebe7da;">Find your favorite movie here!</h1>
           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque tempora unde
             officiis voluptate cum culpa rem sint quis laboriosam.</p>
-          <a href="/movies"><button class="btn text-dark btn-lg" style="background-color: #ed533c">Browse
-              Movies</button></a>
+          <% if (logged) { %>
+            <a href="/movies"><button class="btn text-dark btn-lg" style="background-color: #ed533c">Browse
+                Movies</button></a>
+            <% } else { %>
+              <a href="/login"><button class="btn text-dark btn-lg" style="background-color: #ed533c">Browse
+                  Movies</button></a>
+              <% } %>
         </div>
         <img class="img-fluid w-50 d-none d-sm-block" style="border-radius: 10px;border:5px solid #ffffff"
           src="https://www.stayathomemum.com.au/wp-content/uploads/2021/07/iStock_000002787011_Small.jpg" alt="Movie">
@@ -84,8 +93,17 @@
                 <p class="card-text"><strong>Price:</strong>
                   <%= formatPrice(element.price) %>
                 </p>
-                <a href="/movies/<%= element.id %>" class="btn" style="background-color: #ed533c">Details</a>
-                <a href="#" class="btn" style="background-color: #ed533c">To Cart</a>
+                <% if (logged) { %>
+                  <a href="/movies/filler/<%= element.id %>" class="btn" style="background-color: #ed533c">Details</a>
+                  <% } else { %>
+                    <a href="/login %>" class="btn" style="background-color: #ed533c">Details</a>
+                    <% } %>
+                      <% if (logged) { %>
+                        <a href="/movies/filler/<%= element.id %>/cart" class="btn"
+                          style="background-color: #ed533c">Buy</a>
+                        <% } else { %>
+                          <a href="/login" class="btn" style="background-color: #ed533c">Buy</a>
+                          <% } %>
               </div>
             </div>
           </div>
