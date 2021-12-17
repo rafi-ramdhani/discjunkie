@@ -13,27 +13,31 @@
 <body style="background-color: #ebe7da;">
 
   <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #07141c;">
-    <a href="#">
-      <div class="container">
-        <a href="/"><img
-            src="https://lh3.googleusercontent.com/2RIq19exzNZr8jtkBxdow2idXPp0ELRQcsU9VMJIOnBZHAYVkRMbDzAi04c7YuMOpKoT=s170"
-            alt="DiscJunkie"></a>
+    <div class="container">
+      <a href="/"><img
+          src="https://lh3.googleusercontent.com/2RIq19exzNZr8jtkBxdow2idXPp0ELRQcsU9VMJIOnBZHAYVkRMbDzAi04c7YuMOpKoT=s170"
+          alt="DiscJunkie"></a>
 
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link" style="color: #ebe7da;">Home</a>
+          </li>
+          <% if (logged) { %>
             <li class="nav-item">
-              <a href="/" class="nav-link" style="color: #ebe7da;">Home</a>
+              <a href="/logout" class="nav-link" style="color: #ebe7da;">Sign Out</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link" style="color: #ebe7da;">Sign In</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link" style="color: #ebe7da;">Sign Up</a>
-            </li>
-          </ul>
-        </div>
+            <% } else { %>
+              <li class="nav-item">
+                <a href="/login" class="nav-link" style="color: #ebe7da;">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a href="/register" class="nav-link" style="color: #ebe7da;">Sign Up</a>
+              </li>
+              <% } %>
+        </ul>
       </div>
-    </a>
+    </div>
   </nav>
 
   <section>
@@ -44,7 +48,7 @@
 
       <div class="row justify-content-center my-5">
         <div class="col-lg-6">
-          <form action="/movies/<%= movie.id %>/edit" method="post">
+          <form action="/movies/filler/<%= movie.id %>/edit" method="post">
 
             <label for="title" class="form-label">Title:</label>
             <input type="text" class="form-control" id="title" placeholder="e.g. Forrest Gump" name="title"

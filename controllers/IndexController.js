@@ -18,7 +18,7 @@ class IndexController {
           randomMovies.push(data[random])
         }
 
-        res.render('home', { randomMovies, formatPrice })
+        res.render('home', { randomMovies, formatPrice, logged: req.session.user })
       })
       .catch(err => {
         res.send(err)

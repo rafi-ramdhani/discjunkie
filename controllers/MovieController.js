@@ -2,6 +2,7 @@ const { Movie, Genre, MovieGenre, Detail, User } = require('../models')
 const Sequelize = require('sequelize')
 const Op = Sequelize.Op
 const formatPrice = require('../helpers/formatPrice')
+const sendMail = require('../helpers/sendMail')
 
 class MovieController {
 
@@ -12,7 +13,7 @@ class MovieController {
       },
       where: {
         stock: {
-          [Op.gt]: [0]
+          [Op.gte]: 1
         }
       }
     }
@@ -43,7 +44,11 @@ class MovieController {
 
     Movie.scopeNotAvailable(where)
       .then(data => {
-        res.render('movieList', { data, formatPrice })
+        console.log(req.session)
+
+        let admin = req.session.user.role === 'admin'
+
+        res.render('movieList', { data, formatPrice, error: req.query.error, logged: req.session.user, admin })
       })
       .catch(err => {
         res.send(err)
@@ -68,7 +73,8 @@ class MovieController {
         })
       })
       .then(data => {
-        res.render('movieDetail', { data, genres: movieGenre.Genres, formatPrice })
+        let admin = req.session.user.role === 'admin'
+        res.render('movieDetail', { data, genres: movieGenre.Genres, formatPrice, logged: req.session.user, admin })
       })
       .catch(err => {
         res.send(err)
@@ -76,13 +82,7 @@ class MovieController {
   }
 
   static addForm(req, res) {
-    Genre.findAll()
-      .then(data => {
-        res.render('addForm', { data })
-      })
-      .catch(err => {
-        res.send(err)
-      })
+    res.render('addForm', { logged: req.session.user })
   }
 
   static addMovie(req, res) {
@@ -216,7 +216,7 @@ class MovieController {
         })
       })
       .then(data => {
-        res.render('editForm', { data, movie })
+        res.render('editForm', { data, movie, logged: req.session.user })
       })
       .catch(err => {
         res.send(err)
@@ -327,6 +327,25 @@ class MovieController {
         }
 
         res.redirect('/movies')
+      })
+      .catch(err => {
+        res.send(err)
+      })
+  }
+
+  static buy(req, res) {
+    Movie.decrement('stock', {
+      where: {
+        id: req.params.movieId
+      }
+    })
+      .then(data => {
+        return Movie.findByPk(req.params.movieId)
+      })
+      .then(data => {
+        let admin = req.session.user.role === 'admin'
+
+        res.render('thanks', { data, admin, logged: req.session.user })
       })
       .catch(err => {
         res.send(err)

@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/rafi-ramdhani/discjunkie#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "nodemailer": "^6.7.2",
     "pg": "^8.7.1",
     "sequelize": "^6.12.0-beta.3"
   },
